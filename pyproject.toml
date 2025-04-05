@@ -1,6 +1,6 @@
 [project]
 name = "us-zip-census"
-version = "0.1.0"
+version = "0.1.5"
 description = "A package for converting US ZIP code to US Census Region and Division"
 authors = [
     {name = "Kris Szczepaniak",email = "kris.szczepaniak@outlook.com"}
@@ -14,8 +14,7 @@ dependencies = [
 
 [tool.poetry]
 packages = [
-    { include = "README.md" },
-    { include = "uszipcensus", from = "src" }
+    { include = "uszipcensus"}
 ]
 
 [tool.poetry.group.dev.dependencies]
