@@ -1,0 +1,26 @@
+[project]
+name = "us-zip-census"
+version = "0.1.0"
+description = "A package for converting US ZIP code to US Census Region and Division"
+authors = [
+    {name = "Kris Szczepaniak",email = "kris.szczepaniak@outlook.com"}
+]
+license = {text = "MIT License"}
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "zipcodes (>=1.3.0,<2.0.0)"
+]
+
+[tool.poetry]
+include = [
+    "README.md",
+    "src/**"
+]
+
+[tool.poetry.group.dev.dependencies]
+pytest = "pytest-mock"
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
