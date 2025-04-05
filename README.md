@@ -1,4 +1,4 @@
-# uszipcensus
+# us-zip-census
 
 `uszipcensus` is a lightweight Python package that converts US ZIP codes into their corresponding Census Division and Region names.
 
