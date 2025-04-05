@@ -4,7 +4,7 @@ Tests main module's functionality
 
 import pytest
 
-from src.main import UsZipCensus
+from src.uszipcensus.main import UsZipCensus
 
 zip_code_test_data_negative = [
     "1234", "12345-12", "09999-097"

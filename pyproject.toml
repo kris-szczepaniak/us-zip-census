@@ -5,7 +5,7 @@ description = "A package for converting US ZIP code to US Census Region and Divi
 authors = [
     {name = "Kris Szczepaniak",email = "kris.szczepaniak@outlook.com"}
 ]
-license = {text = "MIT License"}
+license = {text = "MIT"}
 readme = "README.md"
 requires-python = ">=3.9"
 dependencies = [
@@ -17,9 +17,14 @@ include = [
     "README.md",
     "src/**"
 ]
+[tool.poetry.packages]
+include='uszipcensus'
+from='src'
+
 
 [tool.poetry.group.dev.dependencies]
-pytest = "pytest-mock"
+pytest = "^8.3.5"
+pytest-mock = "^3.14.0"
 
 [build-system]
 requires = ["poetry-core>=2.0.0,<3.0.0"]
